@@ -1,4 +1,4 @@
-const reverse = require('./index.js');
+import reverse from './index.js'
 
 describe('Example test', () => {
 
