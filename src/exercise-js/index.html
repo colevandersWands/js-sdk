@@ -5,10 +5,24 @@
   <title>Empty project</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <script src="index.js"></script>
 </head>
 
 <body>
-  <script src="index.js"></script>
+
+  <input id='to-reverse' placeholder="to reverse" />
+  <br>
+  <button id='reverse-button'>reverse it</button>
+
+  <script>
+    document.getElementById('reverse-button')
+      .addEventListener('click', () => {
+        const toReverse = document.getElementById('to-reverse').value;
+        const reversed = reverse(toReverse);
+        console.log(reversed);
+      });
+  </script>
 </body>
 
 </html>
